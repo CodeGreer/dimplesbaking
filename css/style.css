@@ -1,0 +1,523 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 0.063em; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+/* All of your setup and non media query CSS */
+
+html {
+    font: normal 100% 'Lora', serif;
+    color: #42271A;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+    max-width: 105em;
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    font-size: 100%;
+    line-height: 1.625; /* 26px */
+    background-image: url(../images/dkbrown.png);
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+header {
+    max-width: 105em;
+    width: 70%;
+    margin: 0 auto;
+    height: 15em;
+    overflow: hidden; 
+    position: relative;
+}
+
+.logo {
+    width: 34%;
+    position: absolute;
+    bottom: 0;
+}
+
+h2 {
+    font-size: 6em;
+    font-family: 'Dancing Script', cursive;
+    color: #F9D3D2;
+    position: absolute;
+    right: 6%;
+}
+
+/* Menu */ 
+
+.hnav {
+    width: 60%;
+    height: auto;
+    margin-right: 4%;
+    padding-bottom: .5em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} 
+
+.hnav a {
+    flex 1;
+    font-size: 1.5em;
+    width: 25%;
+    text-align: center;
+}
+
+.current {
+    font-family: 'Dancing Script', cursive; 
+    color: #ABF0D1 !important;
+    -webkit-transform: scale(1.3);
+}
+
+nav a:link, .copy a:link {color: #F9D3D2; text-decoration: none; } 
+nav a:visited, .copy a:visited {color: #F9D3D2;}  
+nav a:hover, .copy a:hover {font-family: 'Dancing Script', cursive; color: #ABF0D1; -webkit-transform: scale(1.3);}  
+nav a:active, copy a:active {color: #F9D3D2;}  
+
+/* Main */
+
+main {
+    max-width: 105em;
+    width: 70%;
+    margin: 0 auto;
+    flex: 1;
+    background-image: url(../images/pink.png);
+}
+
+.op {
+    background-color: rgba(249, 211, 210, 0.5);
+    padding: 1% 0 3%;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    text-align: center;
+}
+
+p {
+    font-size: 1.7em;
+    text-align: justify;
+    padding: 2% 0;
+}
+
+.tl {
+    color: #A23C3D;
+    text-decoration: none;
+}
+
+.right {
+    text-align: right;
+}
+
+hr {
+	border-top: .4em double #42271A;
+	text-align: center;
+}
+
+hr:after {
+	content: '\002665';
+	display: inline-block;
+	position: relative;
+	top: -20px;
+	padding: .2em .5em .1em;
+	background: #FD83A1;
+	color: #42271A;
+	font-size: 1.1em;
+}
+
+
+/* Section */
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+
+section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 1%;
+}
+
+section div figure {
+    flex: 1;
+    padding: 2% 1% 1%;
+}
+
+figcaption {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.special_img {
+    width: 70%;
+    margin: 0 15%;
+    padding-top: 2%;
+}
+
+/* Footer */ 
+
+#push {
+    max-width: 105em;
+    width: 100%;
+    height: 0;
+    margin: 0 auto;
+}
+    
+footer{
+    max-width: 105em;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2% 0;
+    overflow: hidden;
+}
+
+.fnav {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fnav a {
+    font-size: 1.2em; 
+    width: 16.7%;
+    text-align: center;
+}
+
+.copy {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.1em;
+    color: #F9D3D2;
+    padding: 5% 0 0;
+}
+
+.copy a {
+    color: #ABF0D1 !important; 
+}
+
+
+/**** Mobile First Media Queries ****/
+
+
+/*** Up to 5200px 25% ***/
+@media only screen and (max-width: 325em) {
+  
+body {
+    font-size: 400%;
+} 
+}
+
+/*** Up to 3904px 33% ***/
+@media only screen and (max-width: 244em) {
+    
+body {
+     font-size: 300.5%;
+}         
+}
+
+/*** Up to 2640px 50% ***/
+@media only screen and (max-width: 165em) {
+    
+body {
+     font-size: 200%;
+}   
+}
+
+/*** Up to 2000px 67% ***/
+@media only screen and (max-width: 125em) {
+    
+body {
+     font-size: 150.2%;
+}     
+}
+
+/*** Up to 1840px 75% ***/
+@media only screen and (max-width: 115em) {
+ 
+body {
+     font-size: 133.3%;
+}        
+}
+
+/*** Up to 1520px 90% ***/
+@media only screen and (max-width: 95em) {
+ 
+body {
+     font-size: 111.1%;
+}        
+}
+
+/*** Up to 1360px 100% ***/
+@media only screen and (max-width: 85em) {
+   
+body {
+    font-size: 95%;
+} 
+}
+    
+/*** Up to 1280px 100% ***/    
+@media only screen and (max-width: 80em) {
+    
+body {
+    font-size: 95%;
+} 
+}
+
+/*** Up to 1200px 110% ***/
+@media only screen and (max-width: 75em) {
+  
+body {
+    font-size: 90%;
+}   
+}
+
+/*** Up to 1120px ***/
+@media only screen and (max-width: 70em) {
+  
+body {
+    font-size: 80%;  
+}         
+}
+
+/*** Up to 1040px 125% ***/
+@media only screen and (max-width: 65em) {
+    
+body {
+     font-size: 78%;
+}    
+}
+
+/*** Up to 976px ***/
+@media only screen and (max-width: 61em) {
+  
+body {
+    font-size: 70%;
+}      
+}
+
+/*** Up to 880px 150% ***/
+@media only screen and (max-width: 55em) {
+  
+body {
+   font-size: 62%;
+}   
+}
+
+
+/************ Change Format ************/
+
+
+/*** Up to 800px 175% ***/
+@media only screen and (max-width: 50em) {
+ 
+body {
+    font-size: 90%;
+}   
+    
+/* Header */
+
+    header {
+        width: 100%;
+    }
+
+/* Menu */ 
+
+    .hnav {
+        display: none;
+    } 
+    
+/* Main */
+
+    main {
+        width: 100%;
+    }
+
+/* Section */
+
+    section {
+        width: 90%;
+    }
+
+/* Footer */ 
+    
+    footer{
+        width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+
+    .fnav a {
+        font-size: 1.5em; 
+        width: 33.3%;
+        padding: 3% 0;
+    }
+
+    .copy {
+        font-size: 1.2em;
+        margin-top: 5%;
+    }
+
+
+/*** Up to 720px ***/
+@media only screen and (max-width: 45em) {
+ 
+body {
+    font-size: 86%;
+}          
+}
+
+/*** Up to 640px ***/
+@media only screen and (max-width: 40em) {
+    
+    body {
+
+    }  
+    
+    h2 {
+        font-size: 5em;
+     
+    }
+}
+
+/*** Up to 560px ***/
+@media only screen and (max-width: 35em) {
+  
+    body {
+        font-size: 80%;
+    }  
+    
+    p {
+        padding: 4% 0;
+    }
+    
+    /* Section */
+
+    section {
+        width: 86%;
+        padding: 4% 0;
+    }
+    
+    section div figure {
+        padding: 4% 1% 1%;
+    }
+    
+    .hide_560 {
+        display: none;
+    }
+}
+
+/*** Up to 480px ***/
+@media only screen and (max-width: 30em) {
+    
+    body {
+        font-size: 75%;
+    }  
+    
+/* Footer */
+    
+    .fnav a {
+        width: 32%;
+        padding: 4% 0;
+    }
+
+    .copy {
+        font-size: 1em;
+        margin-top: 5%;
+    }
+}
+
+/*** Up to 400px ***/
+@media only screen and (max-width: 25em) {
+
+    body {
+        font-size: 74%;
+    }   
+}
+
+/*** Up to 336px ***/
+@media only screen and (max-width: 21em) {
+   
+    body {
+        font-size: 66%;
+    }  
+}
+
+/*** Up to 256px ***/
+@media only screen and (max-width: 16em) {
+   
+    body {
+        font-size: 50%;
+    }   
+}
+
+/*** Up to 224px ***/
+@media only screen and (max-width: 14em) {
+
+    body {
+        font-size: 50%;
+    }       
+}
