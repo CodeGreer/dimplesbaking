@@ -457,12 +457,30 @@ body {
     /* Section */
 
     section {
-        width: 86%;
+        width: 90%;
         padding: 4% 0;
     }
     
-    section div figure {
-        padding: 4% 1% 1%;
+    section p {
+        width: 90%;
+        margin: 0 5%;
+    }
+    
+    section div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1%;
+    }
+
+    section div figure, .special_img {
+        width: 80%;
+        margin: 0 10%;
+        padding: 4% 0 1%;
+    }
+    
+    figcaption {
+        font-size: 1.7em;
     }
     
     .hide_560 {
@@ -494,7 +512,7 @@ body {
 @media only screen and (max-width: 25em) {
 
     body {
-        font-size: 74%;
+        font-size: 72%;
     }   
 }
 
@@ -502,7 +520,7 @@ body {
 @media only screen and (max-width: 21em) {
    
     body {
-        font-size: 66%;
+        font-size: 64%;
     }  
 }
 
