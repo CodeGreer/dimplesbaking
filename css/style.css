@@ -100,7 +100,12 @@ h2 {
 
 /* Menu */ 
 
-.mobile_nav {
+#menuShowHide {
+	position:absolute;
+	left:-999em;
+}
+
+#mobile {
     display: none;
 }
 
@@ -384,21 +389,45 @@ body {
 
 /* Menu */ 
     
+    label {
+        position: absolute;
+        right: 1.3em;
+        top: 5em;
+        font-size: 2em;
+        color: #ABF0D1;
+    }
+    
+    #menuShowHide + label:before {
+		content: "Menu";
+	}
+    
+	#menuShowHide:checked + label:before {
+		content: "✕";
+	}
+    
+    #menuShowHide:checked ~ #mobile {
+		display: block;
+	}
+
     .mobile_nav {
         display: flex;
         width: 100%;
         height: auto;
         padding: .5em 0;
         justify-content: space-around;
-    }
+    } 
     
     .mobile_nav a {
         flex 1;
         font-size: 2em;
     }
     
-    nav a.x:hover, .copy a:hover {font-family: 'Lora', serif; color: #ABF0D1; -webkit-transform: scale(1);}  
-
+    nav a.x:hover, .copy a:hover {
+        font-family: 'Lora', serif;
+        color: #ABF0D1; 
+        -webkit-transform: scale(1);
+    }  
+    
     .hnav {
         display: none;
     } 
