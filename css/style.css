@@ -232,11 +232,11 @@ figcaption {
     margin: 0 auto;
 }
     
-footer{
+footer {
     max-width: 105em;
     width: 70%;
-    margin: 0 auto;
-    padding: 2% 0;
+    margin: 2% auto;
+    /* padding: 2% 0; */
     overflow: hidden;
 }
 
