@@ -235,14 +235,14 @@ figcaption {
 footer {
     max-width: 105em;
     width: 70%;
-    margin: 2% auto;
-    /* padding: 2% 0; */
+    margin: 0 auto;
     overflow: hidden;
 }
 
 .fnav {
     width: 100%;
     margin: 0 auto;
+    padding: 4% 0 0;
 }
 
 .fnav a {
@@ -256,7 +256,7 @@ footer {
     font-family: 'Dancing Script', cursive;
     font-size: 1.1em;
     color: #F9D3D2;
-    padding: 5% 0 0;
+    padding: 10% 0 2%;
 }
 
 .copy a {
