@@ -90,7 +90,7 @@ header {
     bottom: 0;
 }
 
-h2 a {
+h1 a {
     font-size: 6em;
     font-family: 'Dancing Script', cursive;
     color: #F9D3D2;
@@ -152,7 +152,7 @@ main {
     padding: 1% 0 3%;
 }
 
-h1 {
+h3 {
     font-family: 'Dancing Script', cursive;
     font-size: 3em;
     text-align: center;
@@ -478,12 +478,11 @@ body {
 @media only screen and (max-width: 40em) {
     
     body {
-
+        
     }  
     
-    h2 {
-        font-size: 5em;
-     
+    h1 {
+        font-size: .75em;
     }
 }
 
@@ -557,7 +556,11 @@ body {
 
     body {
         font-size: 72%;
-    }   
+    }  
+    
+    .mobile_nav a {
+        font-size: 1.75em;
+    }
 }
 
 /*** Up to 336px ***/
