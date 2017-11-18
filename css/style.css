@@ -222,6 +222,20 @@ figcaption {
     padding-top: 2%;
 }
 
+.img_left {
+    width: 25%;
+    float: left;
+    margin: 3% 4% 0 0;
+    border: .4em double #42271A;
+}
+
+.img_right {
+    width: 25%;
+    float: right;
+    margin: 3% 0 0 4%;
+    border: .4em double #42271A;
+}
+
 /* Footer */ 
 
 #push {
@@ -506,6 +520,13 @@ body {
         width: 33%;
         font-size: 2em;
         padding: 1em 0;
+    }
+    
+    .img_left, .img_right {
+        width: 80%;
+        float: none;
+        margin: 0 8.5%;
+        padding: 0;
     }
     
     /* Section */
