@@ -156,6 +156,11 @@ h3 {
     text-align: center;
 }
 
+h3 a {
+    text-decoration: none;
+    color: inherit;
+}
+
 p {
     font-size: 1.7em;
     text-align: justify;
